@@ -1,0 +1,58 @@
+.animated {
+  animation-duration: .4s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  from {
+    transform: translateX(7.5rem);
+  }
+
+  to{
+    transform: translateX(0rem);
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-7.5rem);
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp {
+  animation-name: slideInUp;
+}
+@keyframes slideInDown {
+  0% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.slideInDown {
+  animation-name:slideInDown;
+}
